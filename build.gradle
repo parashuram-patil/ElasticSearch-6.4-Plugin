@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+archivesBaseName = 'elasticsearch-6.4-plugin'
+version = '1.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+
+configurations {
+    includeJars
+    provided
+    compile.extendsFrom provided
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  provided 'org.elasticsearch:elasticsearch:6.4.0'
+  compile group: 'org.reflections', name: 'reflections', version: '0.9.11'
+  //compile 'commons-collections:commons-collections:3.2.2'
+  //compile 'org.jsoup:jsoup:1.7.2'
+  //compile ('org.jscience:jscience:4.3.1') {
+  //	exclude group: 'org.javolution', module: 'javolution'
+  //}
+}
+
+task plugin(type: Zip, dependsOn:[':jar']) {
+	dependsOn configurations.compile
+	from files(libsDir)
+    from('src/main/scripts')
+    from ('src/main/plugin-metadata/plugin-security.policy')
+    from {(configurations.compile - configurations.provided)}
+    
+}
+
+artifacts {
+    archives plugin
+}
