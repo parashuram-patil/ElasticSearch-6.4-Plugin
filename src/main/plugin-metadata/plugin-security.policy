@@ -5,4 +5,5 @@ grant {
 	permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
 	permission java.net.SocketPermission "*", "connect";
 	permission java.lang.RuntimePermission "getClassLoader";
+
 };

@@ -1,4 +1,4 @@
-package com.psp.plugin.configuration;
+package com.psp.configuration;
 
 import static java.util.Collections.singletonList;
 
