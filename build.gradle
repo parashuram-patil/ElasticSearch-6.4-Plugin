@@ -1,5 +1,4 @@
 apply plugin: 'java'
-//apply plugin : 'eclipse'
 
 archivesBaseName = 'elastic-search-plugin'
 version = '1.0.0'
