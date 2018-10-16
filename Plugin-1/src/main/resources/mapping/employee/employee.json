@@ -1,0 +1,33 @@
+{
+  "id": {
+    "type": "keyword"
+  },
+  "name": {
+    "type": "text",
+    "fields": {
+      "fullName": {
+        "type": "keyword"
+      }
+    }
+  },
+  "address": {
+    "type": "nested",
+    "properties": {
+      "pinCode": {
+        "type": "integer"
+      },
+      "landMark": {
+        "type": "keyword"
+      },
+      "fullAddress": {
+        "type": "text"
+      }
+    }
+  },
+  "role": {
+    "type": "keyword"
+  },
+  "description": {
+    "type": "text"
+  }
+}

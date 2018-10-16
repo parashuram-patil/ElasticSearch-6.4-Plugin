@@ -1,0 +1,51 @@
+[
+  {
+    "id": "EMP-001",
+    "name": {
+      "firstName": "Parashuram",
+      "middleName": "Shivaji",
+      "lastName": "Patil",
+      
+    },
+    "address": {
+      "city": "Belgaum",
+      "address": "H.No. 531, Shivaji Nagar, Khanapur.",
+      "pinCode": 591302
+    },
+    "role": "Developer",
+    "description": "Excellent Developer"
+  },
+  {
+    "id": "EMP-002",
+    "name": "Sagar F. Kodolli",
+    "address": {
+      "pinCode": 591302,
+      "landMark": "Jamboti Road",
+      "fullAddress": "H.No 432, Sivaji Nagar, Khanapur."
+    },
+    "role": "QA",
+    "description": "Good Quality Analyst"
+  },
+  {
+    "id": "EMP-003",
+    "name": "Arshad Shaikh",
+    "address": {
+      "pinCode": 411017,
+      "landMark": "Dehu Station",
+      "fullAddress": "s.No 531/12, Dehu Road, Pune."
+    },
+    "role": "Developer",
+    "description": "Software Developer"
+  },
+  {
+    "id": "EMP-004",
+    "name": "Niraj Dighe",
+    "address": {
+      "pinCode": 411014,
+      "landMark": "Sahyadri Hospital",
+      "fullAddress": "Flat No. 105, B wing, Tridal Nagar, Pune."
+    },
+    "role": "Developer",
+    "description": "Junior Developer"
+  }
+]
