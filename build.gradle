@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin : 'eclipse'
+
+archivesBaseName = 'elastic-search-plugin'
+version = '1.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  
+  if ( project.hasProperty("1") ) {
+  		compile project(path: ':Plugin-1')
+	}
+	else if ( project.hasProperty("2") ) {
+	  compile project(path: ':Plugin-2')
+	}
+	else {
+		compile project(path: ':Plugin-1')
+		compile project(path: ':Plugin-2')
+	}
+}
+
+
+task plugin(type: Zip, dependsOn:[':jar']) {
+	from files(libsDir)
+    from('src/main/scripts')
+    from ('src/main/plugin-metadata/plugin-security.policy')
+    from configurations.compile.copyRecursive().exclude(group: 'org.elasticsearch').exclude(module: 'jackson-core')
+}
+
+artifacts {
+    archives plugin
+}
