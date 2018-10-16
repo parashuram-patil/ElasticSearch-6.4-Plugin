@@ -1,4 +1,0 @@
-include ':Plugin-1', ':Plugin-2', ':Plugin-Base'
-
-project(':Plugin-1').projectDir = new File('Plugin-1')
-project(':Plugin-2').projectDir = new File('Plugin-2')
