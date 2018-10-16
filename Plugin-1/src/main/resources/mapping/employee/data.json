@@ -1,19 +1,14 @@
 [
   {
     "id": "EMP-001",
-    "name": {
-      "firstName": "Parashuram",
-      "middleName": "Shivaji",
-      "lastName": "Patil",
-      
-    },
+    "name": "Parashuram S. Patil",
     "address": {
-      "city": "Belgaum",
-      "address": "H.No. 531, Shivaji Nagar, Khanapur.",
-      "pinCode": 591302
+      "pinCode": 591302,
+      "landMark": "Jamboti Road",
+      "fullAddress": "H.No. 531, Sivaji Nagar, Khanapur."
     },
     "role": "Developer",
-    "description": "Excellent Developer"
+    "description": "Excellent Experienced Developer"
   },
   {
     "id": "EMP-002",
@@ -21,7 +16,7 @@
     "address": {
       "pinCode": 591302,
       "landMark": "Jamboti Road",
-      "fullAddress": "H.No 432, Sivaji Nagar, Khanapur."
+      "fullAddress": "H.No. 432, Sivaji Nagar, Khanapur."
     },
     "role": "QA",
     "description": "Good Quality Analyst"
@@ -32,10 +27,10 @@
     "address": {
       "pinCode": 411017,
       "landMark": "Dehu Station",
-      "fullAddress": "s.No 531/12, Dehu Road, Pune."
+      "fullAddress": "S.No. 531/12, Dehu Road, Pune."
     },
     "role": "Developer",
-    "description": "Software Developer"
+    "description": "Stylish Software Developer"
   },
   {
     "id": "EMP-004",
